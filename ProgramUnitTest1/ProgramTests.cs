@@ -17,7 +17,7 @@
             Console.SetIn(reader); // Redirect Console.In
 
             //Act
-            Program.Main();   //Защо ми подчартава Program грешката е тази 
+            Program.Main();   //Защо ми подчартава Program метода ми public
 
             //Assert
 
