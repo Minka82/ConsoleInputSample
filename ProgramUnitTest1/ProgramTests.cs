@@ -2,7 +2,8 @@ namespace ProgramUnitTest1
 {
     public class ProgramTests
     {
-     
+        private double expectedResults;
+
         [Test]
         public void Test_ProgramSum_TwoPositiveNumbers()
         {
@@ -17,12 +18,15 @@ namespace ProgramUnitTest1
 
             //Act
             Program.Main();
-                        
+
             //Assert
 
+            var actualResults = writer.ToString();
+            var expectedResults = "The sum is: " + Environment.NewLine + "27" + Environment.NewLine;
 
+            Assert.AreEqual(expectedResults, actualResults);
 
-
+           
         }
     }
 }
