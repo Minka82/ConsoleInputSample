@@ -1,4 +1,4 @@
-namespace ProgramUnitTest1
+﻿namespace ProgramUnitTest1
 {
     public class ProgramTests
     {
@@ -17,7 +17,7 @@ namespace ProgramUnitTest1
             Console.SetIn(reader); // Redirect Console.In
 
             //Act
-            Program.Main();
+            Program.Main();   //Защо ми подчартава Program грешката е тази 
 
             //Assert
 
